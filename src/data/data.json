@@ -44,6 +44,21 @@
     },
     {
       "title": "Visit",
+      "largeImage": "https://www.shawcor.com/",
+      "smallImage": "img/portfolio/19-small.png"
+    },
+    {
+      "title":"Visit",
+      "largeImage": "https://www.mitsui.com/",
+      "smallImage": "img/portfolio/26-small.png"
+    },
+    {
+      "title": "Visit",
+      "largeImage": "https://www.mtlo.co.jp/en/",
+      "smallImage": "img/portfolio/27-small.png"
+    },
+    {
+      "title": "Visit",
       "largeImage": "https:\\infimech-tech.vercel.app",
       "smallImage": "img/portfolio/24-small.png"
     }

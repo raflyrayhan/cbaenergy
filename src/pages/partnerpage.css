@@ -1,84 +1,103 @@
-/* Base and fonts */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Montserrat:wght@600&display=swap");
-
-#partners-page {
-  padding: 0 1rem;
-  background: #fafafa;
+/* === Global Wrapper === */
+#partner-page {
+  background: #f9f9f9;
   font-family: "Poppins", sans-serif;
-  color: #333;
-}
-
-.partners-heading {
-  text-align: center;
-  font-family: "Montserrat", sans-serif;
-  font-size: 4rem;
-  margin-bottom: 1.5rem;
   color: #222;
-}
-
-/* Grid of cards */
-.partners-grid {
-   display: grid;
-  grid-template-columns: 1fr;  /* only one column, full width */
-  gap: 1rem;                   /* space between cards */
-  padding: 0;
-  margin: 0 auto;
-}
-
-/* Individual card */
-.partner-card {
+  padding-bottom: 0;
   width: 100%;
-  box-sizing: border-box;
-  padding: 1.5rem;
-  background: #f385072b;
-  border-radius: 0.5rem;
-  /* optionally stack the title above the list (in case you had a row layout) */
-  display: flex;
-  flex-direction: column;
-  max-height: 390px;
-  align-items: center;
+  overflow-x: hidden;
 }
 
-.partner-card h3 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 2.3rem;
-  margin-bottom: 0;
-  color: #FF6600;
+/* === Section Header === */
+.section-header {
   text-align: center;
+  font-size: 2.4rem;
+  margin: 4rem 0 2rem;
+  font-weight: 600;
+  color: #222;
+  font-family: "Montserrat", sans-serif;
 }
 
-/* List inside card */
-.partner-card ul {
-  /* use CSS Grid to form two columns */
+/* === Grid Layout for Partner Categories === */
+.partners-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem 1rem;    /* row-gap then column-gap */
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* === Card Style === */
+.partner-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.partner-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* === Title of Card === */
+.partner-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1.25rem;
+  color: #ffa200;
+  font-family: "Montserrat", sans-serif;
+  border-bottom: 2px solid #ffa20033;
+  padding-bottom: 0.5rem;
+}
+
+/* === List Styling === */
+.partner-card ul {
   list-style: none;
-  margin: 2vh 2vh;
-  padding: 5vh 3vh;
-  column-gap: 10rem;
+  padding: 0;
+  margin: 0;
 }
 
 .partner-card li {
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  color: #333;
+  transition: all 0.3s ease;
   position: relative;
-  padding-left: 1rem;
-  line-height: 1.4;
-  font-size: 1.8rem;
-  font-weight: 500;
-  color: black;
+  cursor: pointer;
 }
 
 .partner-card li::before {
- content: "•";
+  content: "›";
   position: absolute;
   left: 0;
-  top: 0.2em;
-  color: #FF6600;
+  color: #ffa200;
   font-size: 1rem;
+  font-weight: bold;
+  margin-left: -1.25rem;
+  opacity: 0.8;
+  transition: transform 0.2s ease;
 }
 
-@media (max-width: 600px) {
-  .partners-grid {
-    grid-template-columns: 1fr;
-  }
+.partner-card li:hover {
+  color: #ffa200;
+  font-weight: 500;
+}
+
+.partner-card li:hover::before {
+  transform: translateX(4px);
+}
+
+/* === Footer === */
+.product-footer {
+  background-color: #ffa200;
+  color: #fff;
+  margin-top: 4rem;
+}
+
+.product-footer__inner {
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
 }

@@ -26,7 +26,7 @@ export const Contact = (props) => {
     {/* replace below with your own Service ID, Template ID and Public Key from your EmailJS account */ }
     
     emailjs
-      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_PUBLIC_KEY")
+      .sendForm("service_i2j9hx8", "template_yzil5d7", e.target, "Xt4ZOGB2sm39xwRF4")
       .then(
         (result) => {
           console.log(result.text);
@@ -157,7 +157,7 @@ export const Contact = (props) => {
                       </a>
                     </li>
                     <li>
-                      <a href="https://wa.me/62215762581" target="_blank" rel="noopener noreferrer">
+                      <a href="https://wa.me/6281110135360" target="_blank" rel="noopener noreferrer">
                         <i className="fa fa-whatsapp"></i>
                       </a>
                     </li>

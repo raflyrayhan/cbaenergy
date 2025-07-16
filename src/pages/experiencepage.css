@@ -1,87 +1,127 @@
-/* 1) Base page resets & fonts */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Montserrat:wght@600&display=swap");
-
-/* keep the ID if you like, but it won’t collide with AboutPage */
 #experience-page {
-  background: #fafafa;
-  min-height: 100vh;
-  font-family: "Poppins", sans-serif;
-  color: #333;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  padding: 0;
 }
 
-/* 2) Section headers → exp-section-header */
 .exp-section-header {
-  background: #ffa200;
-  color: #222;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 2.4rem;
-  text-transform: uppercase;
-  text-align: center;
-  margin: 0 auto 1rem;
-  padding: .8rem 1.5rem;
-  border-radius: 6px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  font-size: 2.5rem;
   font-weight: 700;
+  color: #000;
+  padding: 3rem 1rem 1.5rem;
+  text-align: center;
 }
 
-/* 3) Project cards → exp-project-card */
-.exp-project-card {
-  background: #cbc097b1;
-  border-radius: 8px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
-  padding: 2.5rem 3rem;
-  max-width: 900px;
-  margin: 1.5rem auto;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.exp-project-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
-}
-.exp-project-card h2 {
-  font-size: 1.9rem;
-  margin-bottom: 0.5rem;
-  color: #111;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.exp-project-card p {
-  font-size: 1.05rem;
-  line-height: 1.6;
-  margin: 0 0 1.5rem;
-}
-
-/* 4) Table styling → exp-table-container */
 .exp-table-container {
-  max-width: 1000px;
-  margin: 2rem auto 4rem;
   overflow-x: auto;
+  margin: 0 auto;
+  padding: 1rem 2rem 4rem;
+  max-width: 1200px;
 }
-.exp-table-container table {
+
+table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 0.95rem;
-}
-.exp-table-container th,
-.exp-table-container td {
-  padding: 0.75rem 1rem;
-  border: 1px solid #000;
-  color: black;
-}
-.exp-table-container th {
-  background: #ffb638;
-  font-weight: 600;
-  text-align: left;
-}
-.exp-table-container tbody tr:nth-child(even) {
-  background: #fcfcfc;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
 }
 
-/* 5) Utility → exp-centered-empty */
-.exp-centered-empty {
-  height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #aaa;
-  font-style: italic;
+thead {
+  background-color: #ffc117;
+  color: #000;
+  position: sticky;
+  top: 0;
 }
+
+thead th {
+  text-align: center;
+  padding: 2rem 1rem;
+  font-weight: 600;
+}
+
+tbody td {
+  padding: 1.5rem 3rem;
+  font-weight: 500;
+  font-size: 1.4rem;
+  border-bottom: 1px solid #eee;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f4f4f4;
+}
+
+tbody tr:hover {
+  background-color: #e6f7ff;
+}
+
+.back-to-top-button {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  font-size: 1.5rem;
+  background: #ffc117;
+  color: #000;
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  z-index: 999;
+}
+
+.product-footer {
+  padding: 2rem 0;
+  background: #1a1a1a;
+  color: #ccc;
+  text-align: center;
+  font-size: 0.9rem;
+}
+.experience-hero {
+  position: relative;
+  height: 50vh;
+  background: url("../../public/img/header-image-prods.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+
+
+.experience-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.experience-hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.experience-hero h1 {
+  font-size: 4.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.experience-hero p {
+  font-size: 1.9rem;
+  color: #f0f0f0;
+}
+.exp-diagonal-divider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: #fc8906;
+  clip-path: polygon(0 100%, 100% 0, 100% 100%, 0% 100%);
+  z-index: 2;
+}
+

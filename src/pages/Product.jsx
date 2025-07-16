@@ -1,81 +1,91 @@
-import React from "react";
+// ProductPage.jsx
+import React, { useState } from "react";
 import ProductHeader from "../components/productheader";
 import { motion } from "framer-motion";
 import "./productpage.css";
-
-const sectionVariants = {
-  hidden: { opacity: 0, y: 40 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
-};
 
 const PRODUCTS = [
   {
     title: "Integrated Steel",
     items: [
-      "Rigid Line pipes & Bends (bare/coated)",
-      "OCTG (Casing, Tubing, and Accessories)",
-      "Offshore/Onshore Structural Steel Packages (Plates, Beams, Tubulars)",
-      "Pressure Vessels/Tank Farm Steel Packages (Atmospheric/Cryogenic)",
-      "Steel Sheet Piles",
+      { name: "Rigid Line pipes & Bends (bare/coated)", img: "img/rigid-line.png" },
+      { name: "OCTG (Casing, Tubing, and Accessories)", img: "img/octg.png" },
+      { name: "Offshore/Onshore Structural Steel Packages", img: "img/structural-steel.png" },
+      { name: "Pressure Vessels/Tank Farm Steel Packages", img: "img/pressure-vessel.png" },
+      { name: "Steel Sheet Piles", img: "img/sheet-pile.png" },
     ],
-    src: "img/integrated-steel.png",
-    alt: "Integrated Steel",
+    defaultImg: "img/integrated-steel.png",
   },
   {
     title: "Engineered Items",
     items: [
-      "Mechanical and Structural Connectors",
-      "Deck Equipment Systems",
-      "SURF (Flexible Pipes, Umbilical & FOC/Power Cable) and Mooring Systems",
-      "Mooring & Station Keeping Systems for Floating Units",
-      "Mechanical / Electrical / Instrumentation Components",
+      { name: "Mechanical and Structural Connectors", img: "img/connector.png" },
+      { name: "Deck Equipment Systems", img: "img/deck-equip.png" },
+      { name: "SURF Systems", img: "img/surf.png" },
+      { name: "Mooring & Station Keeping", img: "img/mooring.png" },
+      { name: "Mech/Elec/Instr Components", img: "img/components.png" },
     ],
-    src: "img/engineered-item.png",
-    alt: "Engineered Items",
+    defaultImg: "img/engineered-item.png",
   },
   {
     title: "Package Modular",
     items: [
-      "Offshore/Marine Cranes",
-      "Generator Set Package",
-      "Static & Rotating Equipment On Skid Package",
-      "Custody Metering Systems",
-      "Gas Compressor",
-      "Process Equipment Package",
-      "Custom Engineering Package",
+      { name: "Offshore/Marine Cranes", img: "img/marine-crane.png" },
+      { name: "Generator Set Package", img: "img/genset.png" },
+      { name: "Static & Rotating Equipment", img: "img/static-rotating.png" },
+      { name: "Custody Metering Systems", img: "img/metering.png" },
+      { name: "Gas Compressor", img: "img/compressor.png" },
     ],
-    src: "img/package-modular.png",
-    alt: "Package Modular",
-  }
+    defaultImg: "img/package-modular.png",
+  },
 ];
 
 export default function ProductPage() {
+  const [activeImages, setActiveImages] = useState(
+    PRODUCTS.map((sec) => sec.defaultImg)
+  );
+
+  const handleItemClick = (sectionIndex, newImg) => {
+    const updated = [...activeImages];
+    updated[sectionIndex] = newImg;
+    setActiveImages(updated);
+  };
+
   return (
     <main id="product-page">
       <ProductHeader />
 
-      <div className="product-grid">
+      <div className="product-grid-catalog">
         {PRODUCTS.map((sec, i) => (
           <motion.div
             key={i}
-            className="product-card"
-            initial="hidden"
-            whileInView="visible"
+            className="product-card-catalog"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            variants={sectionVariants}
+            transition={{ duration: 0.6 }}
           >
-            <div className="product-text">
+            <div className="product-image-catalog">
+              <img src={activeImages[i]} alt={sec.title} />
+            </div>
+            <div className="product-content">
               <h3>{sec.title}</h3>
               <ul className="product-list">
-                {sec.items.map((it, j) => <li key={j}>{it}</li>)}
+                {sec.items.map((it, j) => (
+                  <li
+                    key={j}
+                    onClick={() => handleItemClick(i, it.img)}
+                    className="clickable"
+                  >
+                    {it.name}
+                  </li>
+                ))}
               </ul>
-            </div>
-            <div className="product-image">
-              <img src={sec.src} alt={sec.alt} />
             </div>
           </motion.div>
         ))}
       </div>
+
       <footer className="product-footer">
         <div className="product-footer__inner">
           <p>© 2025 CBA Energy | Website by Infimech</p>

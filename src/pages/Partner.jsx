@@ -68,11 +68,11 @@ const partnerCategories = [
 ];
 
 export default function Partner() {
-return(
+  return (
+    <main id="partner-page">
+      <PartnerHeader />
 
-    <main>
-        <PartnerHeader/>
-         <motion.div
+      <motion.div
         className="section-header"
         initial="hidden"
         whileInView="visible"
@@ -81,24 +81,34 @@ return(
       >
         Top Partners
       </motion.div>
-        <Gallery data={JsonData.Gallery} />
-<div className="partners-grid">
+
+      <Gallery data={JsonData.Gallery} />
+
+      <div className="partners-grid">
         {partnerCategories.map((cat, idx) => (
-          <div className="partner-card" key={idx}>
+          <motion.div
+            className="partner-card"
+            key={idx}
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: idx * 0.1 }}
+          >
             <h3>{cat.title}</h3>
             <ul>
               {cat.items.map((name, i) => (
                 <li key={i}>{name}</li>
               ))}
             </ul>
-          </div>
+          </motion.div>
         ))}
       </div>
+
       <footer className="product-footer">
         <div className="product-footer__inner">
           <p>© 2025 CBA Energy | Website by Infimech</p>
         </div>
       </footer>
-</main>
-    );
+    </main>
+  );
 }

@@ -1,5 +1,4 @@
 import React from "react";
-import ExperienceHeader from "../components/experienceheader";
 import "./experiencepage.css";
 import { motion } from "framer-motion";
 
@@ -24,9 +23,15 @@ const projectVariants = {
 export default function ExperiencePage() {
   return (
     <main id="experience-page">
-      <ExperienceHeader />
+      <section className="experience-hero">
+        <div className="experience-overlay" />
+        <div className="experience-hero-content">
+          <h1>Our Experience</h1>
+          <p>Delivering reliable engineering solutions across industries</p>
+        </div>
+        <div className="exp-diagonal-divider" />
+      </section>
 
-     
       <motion.div
         className="exp-section-header"
         variants={sectionVariants}

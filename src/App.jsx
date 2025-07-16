@@ -10,6 +10,7 @@ import ProductPage from "./pages/Product";
 import Partner from "./pages/Partner";
 import ContactUs from "./pages/Contactus";
 import CertificationPage from "./pages/certification";
+import ProjectGallery from "./pages/Projectgallery";
 import JsonData from "./data/data.json";
 import "./App.css";
 
@@ -49,6 +50,7 @@ export default function App() {
           path="/experience"
           element={<ExperiencePage/>}
         />
+        <Route path="/projectgallery" element={<ProjectGallery/>}/>
         <Route path="/products" element={<ProductPage/>}/>
         <Route path="/partners" element={<Partner/>}/>
         <Route path="/contact" element={<ContactUs/>}/>

@@ -121,6 +121,15 @@ export const Contact = (props) => {
                 className="address-link">
                 {props.data ? props.data.address2 : "loading"}
                 </a>
+                <br />
+                <br />
+                <i className="fa fa-map-marker"></i> Warehouse
+                <span/>
+                 <a href="https://maps.app.goo.gl/RFMtCxgticLdBpAY8" target="_blank"
+                rel="noopener noreferrer"
+                className="address-link">
+                {props.data ? props.data.address3 : "loading"}
+                </a>
               </p>
             </div>
             <div className="contact-item">

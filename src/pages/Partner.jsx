@@ -72,16 +72,6 @@ export default function Partner() {
     <main id="partner-page">
       <PartnerHeader />
 
-      <motion.div
-        className="section-header"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        variants={sectionVariants}
-      >
-        Top Partners
-      </motion.div>
-
       <Gallery data={JsonData.Gallery} />
 
       <div className="partners-grid">

@@ -1,0 +1,32 @@
+#header .intro {
+  position: relative;
+  height: 100%;                              /* taller stripe */
+  background: url("../../public/img/intro-bg.jpg") center/cover no-repeat;
+}
+#header .overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(to bottom, rgba(1,1,1,1), rgba(1,1,1,0.4));
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;              /* TEXT ON LEFT */
+  padding-left: 5vw;
+}
+.intro-text-container {
+  max-width: 600px;
+  color: white;
+  text-align: left;
+}
+.intro-com {
+  color: #ffca49;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+.intro-title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.intro-paragraph {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}

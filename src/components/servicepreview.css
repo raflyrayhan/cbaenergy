@@ -1,0 +1,51 @@
+/* src/components/ServicePreview.css */
+#services-preview .services-bg {
+  position: relative;
+  height: 90vh;
+  background: url("../../public/img/header-image-serve.jpg") center/cover no-repeat;
+}
+#services-preview .services-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0.5));
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 2rem;
+}
+.services-content {
+  text-align: left;
+  max-width: 600px;
+  color: white;
+  padding: 8vh 8vh;
+}
+.services-content h2 {
+  font-size: 4rem;
+  color: #ffca49;
+  margin-bottom: 4rem;
+  text-align: left;
+}
+.services-content p {
+  font-size: 2.4rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+.services-content ul {
+  list-style: disc inside;
+  margin-bottom: 1rem;
+}
+.services-content li {
+  text-align: left;
+  margin-bottom: 0.5rem;
+  font-size: 2.4rem;
+}
+.btn-custom {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: #ff9800;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-top: 4rem;
+}

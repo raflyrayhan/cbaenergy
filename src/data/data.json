@@ -1,0 +1,149 @@
+{
+  "header": {
+    "com": "CBA Energy",
+    "title": "Delivering Oil & Gas, Power, and Renewable Energy Projects",
+    "paragraph": "We design, build, and maintain reliable energy systems worldwide, tailored to your needs."
+  },
+  "about": {
+    "line1": "At CBA Energy, we leverage best practices and transferable skills learned from the oil & gas industry to deliver high-quality products and services across multiple sectors.",
+    "line2": "Our capability to provide end-to-end solutions—from engineering and procurement to construction and maintenance—makes us the partner of choice."
+  },
+  "services": {
+    "line1": "From subsea to surface and concept to decommissioning, our technical expertise and strong partnerships provide energy-related industries with what they need to succeed.",
+    "services": [
+      "Oil & Gas – Upstream/Downstream",
+      "Power & Renewables Energy",
+      "Energy Transmission & Distribution"
+    ]
+  },
+  "Gallery": [
+    {
+      "title": "Visit",
+      "largeImage": "https://corporate.arcelormittal.com/",
+      "smallImage": "img/portfolio/01-small.png"
+    },
+    {
+      "title": "Visit",
+      "largeImage": "https://top-f.co.id/",
+      "smallImage": "img/portfolio/02-small.png"
+    },
+    {
+      "title": "Visit",
+      "largeImage": "https://www.prysmian.com/en",
+      "smallImage": "img/portfolio/25-small.png"
+    },
+    {
+      "title": "Visit",
+      "largeImage": "https://www.thyssenkrupp-materials-services.com/",
+      "smallImage": "img/portfolio/04-small.png"
+    },
+    {
+      "title": "Visit",
+      "largeImage": "https://www.kanematsu.co.jp/en",
+      "smallImage": "img/portfolio/10-small.png"
+    },
+    {
+      "title": "Visit",
+      "largeImage": "https:\\infimech-tech.vercel.app",
+      "smallImage": "img/portfolio/24-small.png"
+    }
+  ],
+  "Services": [
+    {
+      "image": "*",
+      "name": "*",
+      "text": "*"
+    },
+    {
+      "image": "*",
+      "name": "*",
+      "text": "*"
+    },
+    {
+      "image": "*",
+      "name": "*",
+      "text": "*"
+    }
+  ],
+  "Testimonials": [
+    {
+      "img": "*",
+      "text": "*",
+      "name": "*",
+      "company": "*"
+    },
+    {
+      "img": "*",
+      "text": "*",
+      "name": "*",
+      "company": "*"
+    },
+    {
+      "img": "*",
+      "text": "*",
+      "name": "*",
+      "company": "*"
+    },
+    {
+      "img": "*",
+      "text": "*",
+      "name": "*",
+      "company": "*"
+    },
+    {
+      "img": "*",
+      "text": "*",
+      "name": "*",
+      "company": "*"
+    }
+  ],
+  "Team": [
+    {
+      "img": "*",
+      "name": "*",
+      "job": "*"
+    },
+    {
+      "img": "*",
+      "name": "*",
+      "job": "*"
+    },
+    {
+      "img": "*",
+      "name": "*",
+      "job": "*"
+    },
+    {
+      "img": "*",
+      "name": "*",
+      "job": "*"
+    },
+    {
+      "img": "*",
+      "name": "*",
+      "job": "*"
+    },
+    {
+      "img": "*",
+      "name": "*",
+      "job": "*"
+    }
+  ],
+  "Affiliator": [
+    {
+      "img": "",
+      "name": "",
+      "job": ""
+    }
+  ],
+  "Contact": {
+    "address1": "Gedung Menara Rajawali Lt. 15 Jl. DR. Ide Anak Agung Gde Agung Lot. 5.1 Kuningan Timur, Setiabudi, Jakarta Selatan 12950",
+    "address2": "Jl. Jababeka IV E, Blok V No. 78Q, Kawasan Industri Jababeka I Pasir Gombong, Cikarang Utara – Kab. Bekasi 17530",
+    "phone": "P: +6221 576 1725 (hunting)",
+    "phone2": "F: +6221 576 2581",
+    "email": "sales@cba-energy.com",
+    "facebook": "fb.com",
+    "twitter": "twitter.com",
+    "youtube": "youtube.com"
+  }
+}

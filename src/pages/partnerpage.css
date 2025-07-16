@@ -1,0 +1,84 @@
+/* Base and fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Montserrat:wght@600&display=swap");
+
+#partners-page {
+  padding: 0 1rem;
+  background: #fafafa;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+}
+
+.partners-heading {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+  color: #222;
+}
+
+/* Grid of cards */
+.partners-grid {
+   display: grid;
+  grid-template-columns: 1fr;  /* only one column, full width */
+  gap: 1rem;                   /* space between cards */
+  padding: 0;
+  margin: 0 auto;
+}
+
+/* Individual card */
+.partner-card {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1.5rem;
+  background: #f385072b;
+  border-radius: 0.5rem;
+  /* optionally stack the title above the list (in case you had a row layout) */
+  display: flex;
+  flex-direction: column;
+  max-height: 390px;
+  align-items: center;
+}
+
+.partner-card h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.3rem;
+  margin-bottom: 0;
+  color: #FF6600;
+  text-align: center;
+}
+
+/* List inside card */
+.partner-card ul {
+  /* use CSS Grid to form two columns */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem 1rem;    /* row-gap then column-gap */
+  list-style: none;
+  margin: 2vh 2vh;
+  padding: 5vh 3vh;
+  column-gap: 10rem;
+}
+
+.partner-card li {
+  position: relative;
+  padding-left: 1rem;
+  line-height: 1.4;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: black;
+}
+
+.partner-card li::before {
+ content: "•";
+  position: absolute;
+  left: 0;
+  top: 0.2em;
+  color: #FF6600;
+  font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+  .partners-grid {
+    grid-template-columns: 1fr;
+  }
+}

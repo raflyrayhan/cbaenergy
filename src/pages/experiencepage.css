@@ -1,0 +1,87 @@
+/* 1) Base page resets & fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Montserrat:wght@600&display=swap");
+
+/* keep the ID if you like, but it won’t collide with AboutPage */
+#experience-page {
+  background: #fafafa;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+}
+
+/* 2) Section headers → exp-section-header */
+.exp-section-header {
+  background: #ffa200;
+  color: #222;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto 1rem;
+  padding: .8rem 1.5rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  font-weight: 700;
+}
+
+/* 3) Project cards → exp-project-card */
+.exp-project-card {
+  background: #cbc097b1;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  padding: 2.5rem 3rem;
+  max-width: 900px;
+  margin: 1.5rem auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.exp-project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+.exp-project-card h2 {
+  font-size: 1.9rem;
+  margin-bottom: 0.5rem;
+  color: #111;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.exp-project-card p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin: 0 0 1.5rem;
+}
+
+/* 4) Table styling → exp-table-container */
+.exp-table-container {
+  max-width: 1000px;
+  margin: 2rem auto 4rem;
+  overflow-x: auto;
+}
+.exp-table-container table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+.exp-table-container th,
+.exp-table-container td {
+  padding: 0.75rem 1rem;
+  border: 1px solid #000;
+  color: black;
+}
+.exp-table-container th {
+  background: #ffb638;
+  font-weight: 600;
+  text-align: left;
+}
+.exp-table-container tbody tr:nth-child(even) {
+  background: #fcfcfc;
+}
+
+/* 5) Utility → exp-centered-empty */
+.exp-centered-empty {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #aaa;
+  font-style: italic;
+}

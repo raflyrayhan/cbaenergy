@@ -23,14 +23,19 @@
       "smallImage": "img/portfolio/01-small.png"
     },
     {
-      "title": "Visit",
-      "largeImage": "https://top-f.co.id/",
-      "smallImage": "img/portfolio/02-small.png"
+      "title":"Visit",
+      "largeImage": "https://www.mitsui.com/",
+      "smallImage": "img/portfolio/26-small.png"
     },
     {
       "title": "Visit",
       "largeImage": "https://www.prysmian.com/en",
       "smallImage": "img/portfolio/25-small.png"
+    },
+    {
+      "title": "Visit",
+      "largeImage": "https://top-f.co.id/",
+      "smallImage": "img/portfolio/02-small.png"
     },
     {
       "title": "Visit",
@@ -46,11 +51,6 @@
       "title": "Visit",
       "largeImage": "https://www.shawcor.com/",
       "smallImage": "img/portfolio/19-small.png"
-    },
-    {
-      "title":"Visit",
-      "largeImage": "https://www.mitsui.com/",
-      "smallImage": "img/portfolio/26-small.png"
     },
     {
       "title": "Visit",

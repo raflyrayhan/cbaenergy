@@ -2,30 +2,62 @@
   text-align: center;
   padding: 60px 0 30px;
   background: linear-gradient(to top, rgba(255, 200, 117, 0.8), rgba(255, 152, 0, 1));
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .certification-content {
-  padding: 40px 5vw;
+  position: relative;
+  padding: 40px 5vw 80px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* WRAPPER UNTUK SCROLLBAR ATAS */
+.scrollbar-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  position: relative;
+  padding-top: 14px; /* untuk menampung scrollbar */
+  margin-bottom: -14px; /* naikkan ke atas */
 }
 
 .card-container {
   display: flex;
-  gap: 40px;
-  flex-wrap: wrap;
-  justify-content: center;
+  gap: 32px;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: thin;
+  scrollbar-color: orange transparent;
+  padding: 1rem 0;
+  width: max-content;
 }
 
+/* Scrollbar style */
+.scrollbar-wrapper::-webkit-scrollbar {
+  height: 14px;
+}
+
+.scrollbar-wrapper::-webkit-scrollbar-thumb {
+  background-color: orange;
+  border-radius: 10px;
+  border: 4px solid transparent;
+  background-clip: content-box;
+}
+
+/* Kartu normal */
 .cert-card {
-  background: #fff;
+  background: #fcfcfc9b;
   border-radius: 8px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
   overflow: hidden;
+  min-width: 320px;
   max-width: 400px;
+  flex-shrink: 0;
+  scroll-snap-align: start;
   transition: transform 0.3s ease;
-  color: inherit;
   text-decoration: none;
+  color: inherit;
 }
 
 .cert-card:hover {
@@ -33,36 +65,35 @@
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
 }
 
-
 .cert-card img {
   width: 100%;
   height: auto;
   display: block;
-  border: 1px solid #ccc; /* border tipis */
-  border-radius: 8px; /* opsional: agar sudutnya sedikit melengkung */
   padding: 1rem 2rem;
+  object-fit: contain;
+  border-radius: 8px;
 }
-
 
 .card-body {
   padding: 20px;
 }
 
 .card-body h2 {
-  margin-bottom: 12px;
-  font-size: 2.2rem;
+  font-size: 2rem;
+  margin-bottom: 10px;
   color: black;
 }
 
 .card-body p {
-  font-size: 1.6rem;
-  margin-bottom: 12px;
+  font-size: 1.4rem;
   color: #555;
+  margin-bottom: 12px;
+  line-height: 1.5;
 }
 
 .card-body ul {
   list-style: none;
-  padding-left: 0;
+  padding: 0;
   font-size: 1.3rem;
   color: #333;
 }

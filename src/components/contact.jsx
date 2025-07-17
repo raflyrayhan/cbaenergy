@@ -6,7 +6,7 @@ export default function Footer() {
   const [] = useState(false);
 
   return (
-    <footer style={{ backgroundImage: "linear-gradient(180deg, rgba(190, 143, 2, 1), rgba(255, 218, 189, 1))", color: "white", padding: "20px 0" }}>
+    <footer style={{ background: "rgba(190, 143, 2, 1)", color: "white", padding: "20px 0" }}>
       <div className="container">
         <div className="row" style={{ display: "flex", justifyContent: "space-between" }}>
           <div className="col-md-2">

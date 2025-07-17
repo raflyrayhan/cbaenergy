@@ -167,7 +167,7 @@ export const Contact = (props) => {
         </div>
       </div>
 
-      <footer className="product-footer" style={{ marginTop: "0" }}>
+      <footer className="product-footer" style={{ marginTop: "0", background:"rgba(190, 143, 2, 1)" }}>
         <div className="product-footer__inner">
           <p>© 2025 CBA Energy | Website by Infimech</p>
         </div>

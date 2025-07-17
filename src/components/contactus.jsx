@@ -145,7 +145,7 @@ export const Contact = (props) => {
               <div className="social">
                 <ul>
                   <li>
-                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/in/cba-energy-a89609375/" target="_blank" rel="noopener noreferrer">
                       <i className="fa fa-linkedin"></i>
                     </a>
                   </li>

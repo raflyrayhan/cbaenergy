@@ -13,14 +13,13 @@
   align-items: center;
 }
 
-/* WRAPPER UNTUK SCROLLBAR ATAS */
 .scrollbar-wrapper {
   width: 100%;
   overflow-x: auto;
   overflow-y: hidden;
   position: relative;
-  padding-top: 14px; /* untuk menampung scrollbar */
-  margin-bottom: -14px; /* naikkan ke atas */
+  padding-top: 14px; 
+  margin-bottom: -14px; 
 }
 
 .card-container {
@@ -33,7 +32,6 @@
   width: max-content;
 }
 
-/* Scrollbar style */
 .scrollbar-wrapper::-webkit-scrollbar {
   height: 14px;
 }
@@ -45,7 +43,6 @@
   background-clip: content-box;
 }
 
-/* Kartu normal */
 .cert-card {
   background: #fcfcfc9b;
   border-radius: 8px;

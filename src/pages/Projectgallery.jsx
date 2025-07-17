@@ -8,9 +8,9 @@ const projectData = [
     category: "Instrumentation",
     description: "Modular skid fabrication for offshore platforms including structure, piping, and E&I.",
     images: [
-      "img/projects/SAM_3805.jpg",
-      "img/projects/SAM_4174.jpg",
-      "img/projects/SAM_4197.jpg",
+      "img/projects/SAM_3805.JPG",
+      "img/projects/SAM_4174.JPG",
+      "img/projects/SAM_4197.JPG",
     ]
   },
   {

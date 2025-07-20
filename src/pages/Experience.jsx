@@ -105,6 +105,11 @@ export default function ExperiencePage() {
         <tr><td>45</td><td>Jasa Pengadaan Listrik PLN 3 MW dan Instalasi di Unit Bisnis Pertambangan Bauksit Tayan</td><td>Tayan, Kalimantan</td><td>AP / PT Antam</td></tr>
         <tr><td>46</td><td>Jasa Pekerjaan Pembuatan Atap dan Penambahan Lantai Lapangan Tenis di Unit Bisnis Pertambangan Bauksit Tayan</td><td>Tayan, Kalimantan</td><td>AP / PT Antam</td></tr>
         <tr><td>47</td><td>Provision of Telescopic Crane</td><td>Gresik</td><td>AP / Saka (Indonesia-Pangkah) Limited</td></tr>
+        <tr><td>48</td><td>Supply Pipes</td><td>Cepu</td><td>Exxon</td></tr>
+        <tr><td>49</td><td>Supply Beam</td><td>Terubuk - Offshore</td><td>Medco</td></tr>
+        <tr><td>50</td><td>Supply Concrete Mattress</td><td>Terubuk</td><td>Medco</td></tr>
+        <tr><td>51</td><td>Hot Rolled Coil Supply</td><td>Bekasi Pd. Ungu</td><td>Bakrie Pipe Industries</td></tr>
+        <tr><td>52</td><td>VLP Gas Compressor Package</td><td>Kalimantan Timur</td><td>Pertamina Hulu Sanga Sanga</td></tr>
           </tbody>
         </table>
       </motion.div>

@@ -24,7 +24,7 @@ export default function App() {
   if (!landingPageData) {
     return (
       <p style={{ padding: 50, textAlign: "center" }}>
-        Loading data…
+        <img src="/img/loading.gif" alt="Loading..." />
       </p>
     );
   }

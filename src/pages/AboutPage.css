@@ -12,19 +12,25 @@
 }
 
 .about-hero {
+  position: relative;    /* supaya ::before absolute terhadap .about-hero */
   background: url("../../public/img/header-image-product.jpg") center/cover no-repeat;
   color: white;
   text-align: center;
   padding: 10rem 4rem;
   clip-path: polygon(0 0,100% 0,100% 70%,0 100%);
+  z-index: 1;
+  overflow: hidden;
 }
-/* dark overlay */
+
 .about-hero::before {
   content: "";
   position: absolute;
-  inset: 0;                       /* shorthand for top/right/bottom/left: 0 */
-  background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.2));   /* tweak the alpha for more/less darkness */
-  z-index: 1;
+  inset: 0;
+  background: 
+    linear-gradient(to bottom, rgba(0,0,0,0.8) 10%, rgba(240,154,14,0.6) 90%);
+  clip-path: polygon(0 0,100% 0,100% 70%,0 100%);
+  z-index: 2;
+  pointer-events: none;
 }
 
 /* make sure your text sits above the overlay */

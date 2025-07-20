@@ -23,7 +23,7 @@ const listItem = {
 
 export default function AboutPage() {
 
-  const coreItems = [
+  const coreData = [
   {
     lead: "Be recognized by customers, employees, and shareholders",
     rest: "as the premier strategic partner."
@@ -51,6 +51,12 @@ export default function AboutPage() {
     "Partnering with other leading organizations in complementary sectors to provide packaged solutions.",
     "Investing in local infrastructure and integration of our local team."
   ];
+  const coreImages = [
+  "img/core_value1.png",
+  "img/core_value2.png",
+  "img/core_value3.png"
+];
+
 
   return (
     <main id="about-page">
@@ -86,25 +92,28 @@ export default function AboutPage() {
         variants={sectionVariants}
       >
         <h2><b style={{color: "orange"}}>CORE</b> <b style={{color: "navy"}}>VALUE</b></h2>
-        {coreItems.map(({ lead, rest }, i) => (
-  <motion.div
-    key={i}
-    className={`core-card ${i % 2 ? "reverse" : ""}`}
-    initial="hidden"
-    whileInView="visible"
-    viewport={{ once: true }}
-    variants={sectionVariants}
-  >
-    <div className="core-text">
-      <p style={{ fontSize: "2rem", marginBottom: "1rem", textAlign: "left" }}>
-        <strong>{lead}</strong> {rest}
-      </p>
-    </div>
-    <div className="core-img">
-      <img src="img/core_value.png" alt="Core Value Illustration" />
-    </div>
-  </motion.div>
-))}
+        {coreData.map((data, i) => {
+  const { lead, rest } = data;
+  return (
+    <motion.div
+      key={i}
+      className={`core-card ${i % 2 ? "reverse" : ""}`}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      variants={sectionVariants}
+    >
+      <div className="core-text">
+        <p style={{ fontSize: "2rem", marginBottom: "1rem", textAlign: "left" }}>
+          <strong>{lead}</strong> {rest}
+        </p>
+      </div>
+      <div className="core-img">
+        <img src={coreImages[i]} alt={`Core Value Illustration ${i + 1}`} />
+      </div>
+    </motion.div>
+  );
+})}
       </motion.div>
      
       <motion.div

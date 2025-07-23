@@ -29,8 +29,8 @@ export default function Footer() {
                 Experience
               </h3>
               <ul style={{ listStyle: "none", padding: 0 }}>
-               <li style={{ marginBottom: "10px" }}>Closed Projects List</li>
-               <li style={{ marginBottom: "10px" }}>Projects Gallery</li>
+               <li style={{ marginBottom: "10px" }}><a href="/Projectgallery.jsx" style={{color:"white"}}>Closed Projects List</a></li>
+               <li style={{ marginBottom: "10px" }}><a href="/Experience.jsx">Projects Gallery</a></li>
               </ul>
             </div>
           </div>
@@ -54,11 +54,8 @@ export default function Footer() {
           <div className="col-md-2">
             <h3 style={{ marginBottom: "20px" }}>About Us</h3>
             <ul style={{ listStyle: "none", padding: 0 }}>
-              <li style={{ marginBottom: "10px" }}>Quality & HSE</li>
-              <li style={{ marginBottom: "10px" }}>Core Value</li>
-              <li style={{ marginBottom: "10px" }}>Unique Profile</li>
-              <li style={{ marginBottom: "10px" }}>Key Differentiators</li>
-              <li style={{ marginBottom: "10px" }}>Our Strategy</li>
+              <li style={{ marginBottom: "10px" }}><a href="/About.jsx">Introduction</a></li>
+              <li style={{ marginBottom: "10px" }}><a href="/certification.jsx">Legal Documents</a></li>
             </ul>
           </div>
 

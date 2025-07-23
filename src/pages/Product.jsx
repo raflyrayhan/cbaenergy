@@ -8,20 +8,20 @@ const PRODUCTS = [
   {
     title: "Integrated Steel",
     items: [
-      { name: "Rigid Line pipes & Bends (bare/coated)", img: "img/rigid-line.png" },
-      { name: "OCTG (Casing, Tubing, and Accessories)", img: "img/octg.png" },
-      { name: "Offshore/Onshore Structural Steel Packages", img: "img/structural-steel.png" },
-      { name: "Pressure Vessels/Tank Farm Steel Packages", img: "img/pressure-vessel.png" },
-      { name: "Steel Sheet Piles", img: "img/sheet-pile.png" },
+      { name: "Rigid Line pipes & Bends (bare/coated)", img: "img/rigidpipe.jpg" },
+      { name: "OCTG (Casing, Tubing, and Accessories)", img: "img/octg.jpg" },
+      { name: "Offshore/Onshore Structural Steel Packages", img: "img/offshore1.jpg" },
+      { name: "Pressure Vessels/Tank Farm Steel Packages", img: "img/pressurevessel.jpg" },
+      { name: "Steel Sheet Piles", img: "img/steelsheet1.jpg" },
     ],
     defaultImg: "img/integrated-steel.png",
   },
   {
     title: "Engineered Items",
     items: [
-      { name: "Mechanical and Structural Connectors", img: "img/connector.png" },
-      { name: "Deck Equipment Systems", img: "img/deck-equip.png" },
-      { name: "SURF Systems", img: "img/surf.png" },
+      { name: "Mechanical and Structural Connectors", img: "img/engineered-item.png" },
+      { name: "Deck Equipment Systems", img: "img/deck1.jpg" },
+      { name: "SURF Systems", img: "img/engineered-item.png" },
       { name: "Mooring & Station Keeping", img: "img/mooring.png" },
       { name: "Mech/Elec/Instr Components", img: "img/components.png" },
     ],

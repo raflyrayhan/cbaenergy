@@ -72,7 +72,6 @@ export default function Navigation() {
               <ul className="dropdown-menu">
                 <li><a href="/experience">Project List</a></li>
                 <li><a href="/projectgallery">Project Gallery</a></li>
-                <li><a href="/experience#region-map">On Going Projects</a></li>
               </ul>
             </li>
             <li><a href="/products" className="page-scroll">Products</a></li>

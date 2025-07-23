@@ -30,7 +30,7 @@ export default function Footer() {
               </h3>
               <ul style={{ listStyle: "none", padding: 0 }}>
                <li style={{ marginBottom: "10px" }}><a href="/Projectgallery.jsx" style={{color:"white"}}>Closed Projects List</a></li>
-               <li style={{ marginBottom: "10px" }}><a href="/Experience.jsx">Projects Gallery</a></li>
+               <li style={{ marginBottom: "10px" }}><a href="/Experience.jsx" style={{color:"white"}}>Projects Gallery</a></li>
               </ul>
             </div>
           </div>
@@ -54,8 +54,8 @@ export default function Footer() {
           <div className="col-md-2">
             <h3 style={{ marginBottom: "20px" }}>About Us</h3>
             <ul style={{ listStyle: "none", padding: 0 }}>
-              <li style={{ marginBottom: "10px" }}><a href="/About.jsx">Introduction</a></li>
-              <li style={{ marginBottom: "10px" }}><a href="/certification.jsx">Legal Documents</a></li>
+              <li style={{ marginBottom: "10px" }}><a href="/About.jsx" style={{color:"white"}}>Introduction</a></li>
+              <li style={{ marginBottom: "10px" }}><a href="/certification.jsx" style={{color:"white"}}>Legal Documents</a></li>
             </ul>
           </div>
 
@@ -68,7 +68,6 @@ export default function Footer() {
             <h3 style={{ marginBottom: "1rem" }}>Contact Us</h3>
             <p style={{ marginBottom: "1rem" }}>P: +6221 576 1725 (hunting)</p>
             <p style={{ marginBottom: "1rem" }}>F: +6221 576 2581</p>
-            <p style={{ marginBottom: "1rem" }}>Whatsapp: +62811 1013 5360</p>
             <p style={{ marginBottom: "1rem" }}>E-mail: sales@cba-energy.com</p>
           </div>
         </div>

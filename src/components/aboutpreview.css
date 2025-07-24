@@ -1,9 +1,10 @@
-/* src/components/AboutPreview.css */
 #about-preview .about-bg {
   position: relative;
-  height: 90vh;
+  min-height: 60vh;           /* mobile-friendly: lebih fleksibel dari 90vh */
+  height: 150vh;
   background: url("../../public/img/marine-img.jpg") center/cover no-repeat;
 }
+
 #about-preview .about-overlay {
   position: absolute;
   inset: 0;
@@ -13,27 +14,82 @@
   justify-content: flex-start;
   padding: 0 2rem;
 }
+
 .about-content {
   text-align: justify;
-  padding: 8vh 8vh;
+  padding: 8vh 6vw;
   max-width: 600px;
-  color: white;
+  color: #fff;
+  z-index: 1;
 }
+
 .about-content h2 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   color: #ffca49;
   margin-bottom: 1rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
 }
+
 .about-content p {
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-bottom: 1rem;
+  font-size: 1.08rem;
+  line-height: 1.7;
+  margin-bottom: 1.1rem;
+  color: #fff;
 }
+
 .btn-custom {
   display: inline-block;
   padding: 0.75rem 1.5rem;
-  background: #ff9800;
-  color: white;
-  border-radius: 4px;
+  background: linear-gradient(90deg, #ff9800, #f57c00);
+  color: #fff;
+  border-radius: 8px;
   text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  transition: background 0.2s, transform 0.2s;
+}
+
+.btn-custom:hover,
+.btn-custom:focus {
+  background: #1a237e;
+  color: #fff;
+  transform: translateY(-2px) scale(1.02);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  #about-preview .about-overlay {
+    padding: 0 1rem;
+  }
+  .about-content {
+    padding: 6vh 4vw;
+    max-width: 100vw;
+  }
+  .about-content h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  #about-preview .about-bg {
+    min-height: 420px;
+    height: auto;
+  }
+  #about-preview .about-overlay {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem 1rem;
+  }
+  .about-content {
+    padding: 4vh 0;
+    max-width: 100%;
+  }
+  .about-content h2 {
+    font-size: 1.2rem;
+  }
+  .about-content p {
+    font-size: 0.98rem;
+  }
 }

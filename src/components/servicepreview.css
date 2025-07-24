@@ -1,9 +1,10 @@
-/* src/components/ServicePreview.css */
 #services-preview .services-bg {
   position: relative;
+  min-height: 60vh;
   height: 90vh;
   background: url("../../public/img/header-image-serve.jpg") center/cover no-repeat;
 }
+
 #services-preview .services-overlay {
   position: absolute;
   inset: 0;
@@ -13,39 +14,109 @@
   justify-content: flex-end;
   padding: 0 2rem;
 }
+
 .services-content {
   text-align: left;
   max-width: 600px;
-  color: white;
-  padding: 8vh 8vh;
+  color: #fff;
+  padding: 8vh 8vw;
+  z-index: 1;
+  background: rgba(0,0,0,0.01); /* transparan, hanya untuk layer stacking */
 }
+
 .services-content h2 {
-  font-size: 4rem;
+  font-size: 3rem;
   color: #ffca49;
-  margin-bottom: 4rem;
-  text-align: left;
+  margin-bottom: 2rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
 }
+
 .services-content p {
-  font-size: 2.4rem;
-  line-height: 1.6;
-  margin-bottom: 1rem;
-  text-align: left;
+  font-size: 1.4rem;
+  line-height: 1.7;
+  margin-bottom: 1.1rem;
+  color: #fff;
 }
+
 .services-content ul {
   list-style: disc inside;
   margin-bottom: 1rem;
+  padding-left: 1rem;
 }
+
 .services-content li {
   text-align: left;
   margin-bottom: 0.5rem;
-  font-size: 2.4rem;
+  font-size: 1.15rem;
+  line-height: 1.5;
 }
+
 .btn-custom {
   display: inline-block;
-  padding: 0.75rem 1.5rem;
-  background: #ff9800;
-  color: white;
-  border-radius: 4px;
+  padding: 0.75rem 1.7rem;
+  background: linear-gradient(90deg, #ff9800, #f57c00);
+  color: #fff;
+  border-radius: 8px;
   text-decoration: none;
-  margin-top: 4rem;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-top: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  transition: background 0.2s, transform 0.2s;
+}
+
+.btn-custom:hover,
+.btn-custom:focus {
+  background: #1a237e;
+  color: #fff;
+  transform: translateY(-2px) scale(1.02);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  #services-preview .services-overlay {
+    padding: 0 1rem;
+  }
+  .services-content {
+    padding: 6vh 3vw;
+    max-width: 100vw;
+  }
+  .services-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  .services-content p,
+  .services-content li {
+    font-size: 1.05rem;
+  }
+}
+
+@media (max-width: 600px) {
+  #services-preview .services-bg {
+    min-height: 380px;
+    height: auto;
+  }
+  #services-preview .services-overlay {
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 2rem 1rem;
+  }
+  .services-content {
+    padding: 3vh 0;
+    max-width: 100%;
+  }
+  .services-content h2 {
+    font-size: 1.3rem;
+  }
+  .services-content p,
+  .services-content li {
+    font-size: 0.98rem;
+  }
+  .btn-custom {
+    margin-top: 1.2rem;
+    padding: 0.7rem 1.1rem;
+    font-size: 0.98rem;
+  }
 }

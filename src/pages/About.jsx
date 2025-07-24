@@ -78,7 +78,7 @@ export default function AboutPage() {
         viewport={{ once: true }}
         variants={sectionVariants}
       >
-        <h2><b style={{color:"orange"}}>QUALITY</b> <b style={{color:"black", fontSize:"3.5rem"}}>&amp;</b> <b style={{color:"navy"}}>HSE</b></h2>
+        <h2><b style={{color:"orange"}}>QUALITY</b> &amp; <b style={{color:"navy"}}>HSE</b></h2>
         <p style={{ fontSize: "2rem" }}><b style={{color: "orange"}}>CBA</b> <b style={{color: "navy"}}>Energy</b> drives future-focused innovation with uncompromising quality and a <b>zero-harm</b> HSE culture, continuously improving our management system and holding <b>ISO 9001:2008, ISO 14001:2009, and OHSAS 18001:2007</b> certifications.</p>
         <img src="img/iso.png" alt="ISO Certifications" style={{maxWidth: "30%"}} />
       </motion.div>
@@ -131,7 +131,7 @@ export default function AboutPage() {
         viewport={{ once: true }}
         variants={sectionVariants}
       >
-          <p style={{ fontSize: "2rem", padding:"0 4rem" }}><b style={{color: "orange"}}>CBA </b> <b style={{color: "navy"}}>Energy </b> provides customers with a unique solution for every specific project</p>
+          <p style={{ fontSize: "2rem", padding:"0 4rem" }}><b style={{color: "orange"}}>CBA </b> <b style={{color: "navy"}}>Energy </b> provides customers with a unique solutions for your projects</p>
       </motion.p>
       <motion.ul
         className="about-list"

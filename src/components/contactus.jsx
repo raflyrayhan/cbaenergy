@@ -154,11 +154,6 @@ export const Contact = (props) => {
                       <i className="fa fa-instagram"></i>
                     </a>
                   </li>
-                  <li>
-                    <a href="https://wa.me/6281110135360" target="_blank" rel="noopener noreferrer">
-                      <i className="fa fa-whatsapp"></i>
-                    </a>
-                  </li>
                 </ul>
               </div>
             </div>

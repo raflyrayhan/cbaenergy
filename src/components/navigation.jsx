@@ -1,36 +1,12 @@
 // Navigation.jsx
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 export default function Navigation() {
-  const [scrolled, setScrolled] = useState(false);
-
- useEffect(() => {
-  const onScroll = () => {
-    const scrolledNow = window.scrollY > 50;
-    setScrolled(scrolledNow);
-
-    const nav = document.getElementById("menu");
-    if (nav) {
-      if (scrolledNow) {
-        nav.classList.add("scrolled");
-        nav.classList.remove("transparent");
-      } else {
-        nav.classList.add("transparent");
-        nav.classList.remove("scrolled");
-      }
-    }
-  };
-
-  onScroll();
-
-  window.addEventListener("scroll", onScroll);
-  return () => window.removeEventListener("scroll", onScroll);
-}, []);
 
   return (
     <nav
       id="menu"
-      className={`navbar navbar-default navbar-fixed-top ${scrolled ? "scrolled" : "transparent"}`}
+      className={`navbar navbar-default navbar-fixed-top`}
     >
       <div className="container">
         <div className="navbar-header">
